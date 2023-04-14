@@ -26,7 +26,7 @@ Please note that your API keys are only stored in your browser and are not sent 
 
 ## Credits
 
-This project was inspired by a [LinkedIn post](https://www.linkedin.com/feed/update/urn:li:activity:7052186703901442048/) and was created with love by [Ugo Bataillard](https://www.linkedin.com/in/ugobataillard/).
+This project was inspired by a [LinkedIn post](https://www.linkedin.com/feed/update/urn:li:activity:7052574879274987520/) and was created with love by [Ugo Bataillard](https://www.linkedin.com/in/ugobataillard/).
 
 ## License
 
