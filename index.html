@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotionGen - Generate Content for Notion Pages</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      line-height: 1.6;
+      color: #3f3f3f;
+    }
+
+    a {
+      color: #5e81ac;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 0;
+      background-color: #ffffff;
+    }
+
+    .hero img {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+    }
+
+    .feature {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+      background-color: #f6f6f6;
+      border: 1px solid #e5e5e5;
+      margin: 10px;
+    }
+
+    .feature h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .feature p {
+      font-size: 18px;
+    }
+
+    .testimonials {
+      background-color: #ffffff;
+      padding: 40px 0;
+    }
+
+    .testimonial {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .testimonial:last-child {
+      margin-bottom: 0;
+    }
+
+    .testimonial img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .testimonial-content {
+      max-width: 600px;
+    }
+
+    .testimonial-content h4 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-content p {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .testimonial-content span {
+      font-size: 14px;
+      color: #5e81ac;
+    }
+
+    .how-to {
+      background-color: #f6f6f6;
+      padding: 40px 0;
+    }
+
+    .how-to h2 {
+      margin-bottom: 20px;
+    }
+
+    .how-to p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .form-container {
+      background-color: #ffffff;
+      padding: 40px;
+      margin-bottom: 60px;
+    }
+
+    label {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+      border: 1px solid #e5e5e5;
+      margin-bottom: 20px;
+    }
+
+    button {
+      display: inline-block;
+      background-color: #5e81ac;
+      color: #ffffff;
+      padding: 10px 30px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #4c669f;
+    }
+
+    footer {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .footer-text {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .footer-text a {
+      color: #5e81ac;
+      text-decoration: none;
+    }
+
+    .footer-text a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <section class="hero">
+      <img src="logo.png" alt="NotionGen Logo" />
+      <h1>NotionGen</h1>
+      <p>Create content for your Notion pages with the power of AI. Simply provide your prompt and let NotionGen do the
+        rest.</p>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <img src="feature1.png" alt="Dall-E generated image for Time-saving" />
+        <h3>Time-saving</h3>
+        <p>Generate content for your Notion pages in seconds, saving you valuable time and effort.</p>
+      </div>
+      <div class="feature">
+        <img src="feature2.png" alt="Dall-E generated image for AI-powered content generation" />
+        <h3>AI-powered</h3>
+        <p>Leverage the power of GPT-3.5-turbo to create high-quality content tailored to your specific needs.</p>
+      </div>
+      <div class="feature">
+        <img src="feature3.png" alt="Dall-E generated image for Seamless Notion integration" />
+        <h3>Seamless Integration</h3>
+        <p>Effortlessly create and add content to your Notion pages with our easy-to-use interface and Notion API
+          integration.</p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+          <img src="testimonial1.png" alt="Dall-E generated image for Testimonial Person 1" />
+          <div class="testimonial-content">
+            <h4>Jane Doe</h4>
+            <p>NotionGen has made creating content for my Notion pages a breeze. The AI-generated content is
+              surprisingly accurate and helpful.</p>
+            <span>Founder, Example Company</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <img src="testimonial2.png" alt="Dall-E generated image for Testimonial Person 2" />
+          <div class="testimonial-content">
+            <h4>John Smith</h4>
+            <p>I've saved countless hours using NotionGen to generate content for my projects. It's become an essential
+              tool in my workflow.</p>
+            <span>Project Manager, Another Company</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-to">
+      <div class="container">
+        <h2>How to Get API Keys</h2>
+        <p>To use NotionGen, you'll need both Notion and OpenAI API keys. Follow the guides below to obtain them:</p>
+        <p><a href="https://developers.notion.com/docs/getting-started#step-2-generate-an-api-key" target="_blank">How
+            to get your Notion API key</a></p>
+        <p><a href="https://beta.openai.com/docs/guides/authentication#how-to-find-your-keys" target="_blank">How to get
+            your OpenAI API key</a></p>
+        <p>Please note that your API keys are only stored in your browser and are not sent to any server. If you're
+          concerned about security, you can review the source code on <a
+            href="https://github.com/knshiro/notion-ai-clone" target="_blank">GitHub</a>.</p>
+      </div>
+    </section>
+
+    <section class="form-container">
+      <h2>Get Started</h2>
+        <label for="openai_key">OpenAI API Key:</label>
+        <input type="password" id="openai_key">
+        <br>
+
+        <label for="notion_key">Notion API Key:</label>
+        <input type="password" id="notion_key">
+        <br>
+
+        <label for="prompt">Prompt:</label>
+        <textarea id="prompt" rows="4" cols="50"></textarea>
+        <br>
+
+        <button id="submit">Generate & Create Notion Page</button>
+
+      <p id="status"></p>
+    </section>
+
+    <footer>
+      <p class="footer-text">Made with <span style="color: #e74c3c;">&hearts;</span> by <a
+          href="https://www.linkedin.com/in/ugobataillard/" target="_blank">Ugo Bataillard</a></p>
+      <p class="footer-text">Check the <a
+          href="https://www.linkedin.com/feed/update/urn:li:activity:7052186703901442048/" target="_blank">LinkedIn
+          post</a> that inspired this project.</p>
+      <p>&copy; 2023 NotionGen. All rights reserved. <a href="privacy.html">Privacy Policy</a> | <a
+          href="terms.html">Terms of Service</a></p>
+    </footer>
+  </div>
+
+  <script>
+    const submitButton = document.getElementById('submit');
+    submitButton.addEventListener('click', async () => {
+      const openaiKey = document.getElementById('openai_key').value;
+      const notionKey = document.getElementById('notion_key').value;
+      const prompt = document.getElementById('prompt').value;
+
+      const chatGptResponse = await callChatGPT(openaiKey, prompt);
+      const notionApiResponse = await createNotionPage(notionKey, chatGptResponse);
+
+      document.getElementById('status').innerText = notionApiResponse ? 'Page created in Notion!' : 'Error creating page in Notion.';
+    });
+
+    async function callChatGPT(apiKey, prompt) {
+      const response = await fetch('https://api.openai.com/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${apiKey}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          'model': 'gpt-3.5-turbo',
+          'messages': [
+            {
+              'role': 'user',
+              'content': `I want you to create the whole copy with formatting to create the following notion page: "${prompt}". I want you to generate the JSON body I can use in a Notion API call to create that page. Limit yourself to 6 blocks. I want you to only reply with the JSON output on 1 line and nothing else. do not write explanations. do not type commands unless I instruct you to do so. when I need to tell you something in english, I will do so by putting text inside curly brackets {like this}. `
+            }
+          ]
+        })
+      });
+
+      const data = await response.json();
+      return data.choices[0].message.content.trim();
+    }
+
+    async function createNotionPage(apiKey, chatGptResponse) {
+      const response = await fetch('https://api.notion.com/v1/pages', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${apiKey}`,
+          'Content-Type': 'application/json',
+          'Notion-Version': '2022-09-22'
+        },
+        body: chatGptResponse
+      });
+
+      if (response.ok) {
+        return await response.json();
+      } else {
+        return null;
+      }
+    }
+  </script>
+</body>
+
+</html>
